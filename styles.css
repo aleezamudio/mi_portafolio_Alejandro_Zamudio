@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, teal, rgb(0, 54, 54));
+    font-family: 'Gabriela', serif;
+    
+}
+
+.cajaPadre{
+    background-color: transparent;
+    display: grid;
+    grid-gap: 0px ;
+    grid-template-columns: 30% 60%;
+    height: 0px auto;
+}
+
+.caja1{
+    color: white;
+    background: linear-gradient(to bottom, teal, rgb(48, 139, 139));
+    border: 1px solid rgb(11, 175, 175);
+    width: 301px;
+    height: 0px auto;
+    transition: all 1s;
+}
+.caja1:hover{
+    box-shadow: 0px 5px 10px rgb(12, 201, 201);
+}
+.caja1 img{
+    width: 200px;
+    height: 200px;
+
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 10px;
+
+    background-color: transparent;  
+}
+
+.caja1 p{
+    color: white;
+    font-size: 18px ;
+    background-color: transparent;
+    margin: 20px;
+}
+.caja1 ul{
+    margin: 20px;
+    
+}
+.caja1 ul li a{    
+    
+    color: white;
+    transition: 500ms;
+}
+.caja1 ul li a:hover{    
+    color:rgb(0, 54, 54);
+    text-shadow: 0px 0px 4px rgb(12, 201, 201);
+}
+
+
+.caja2{
+    color: white;
+}
+.caja2 h1{
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Gabriela', serif;
+    transition: all 2s;
+}
+.caja2 h1:hover{  
+    color:rgb(0, 54, 54);
+    text-shadow: 0px 0px 4px rgb(12, 201, 201);
+}
+hr{
+    border: 1px solid rgb(11, 175, 175) ;
+}
+
+.caja2 h3{
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    font-size: 30px;
+}
+
+.caja2 p{
+    font-size: 18px;
+    text-decoration: none;
+    text-align: initial;
+}
+
+/*PROYECTOS*/
+.carousel{
+    min-height: 500px;
+    margin-top: -110px;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+.carousel .indicators .indicator-item {
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: green;
+}
+
+
+
+/*media queries*/
+
+@media (max-width:1160px){
+    .cajaPadre{
+        padding: 2px;
+        display: grid;
+        grid-gap: 5px ;
+        grid-template-columns: 100%;
+    }
+    .caja1{
+        display: block;
+        text-align: center;
+        margin: 0px auto;
+        padding-top: 20px;
+    
+
+        color: white;
+        background-color: rgb(0, 150, 150);
+        
+        border: 1px solid rgb(11, 175, 175);
+        width: 95%;
+        height: 500px;
+    }
+    .caja1 img{
+        width: 200px;
+        height: 200px;
+        background-color: transparent;
+          
+    }
+
+    .caja1 p ul li{
+        display: block;
+        text-align:left;
+        margin: 0px auto;
+        padding-top: 20px;
+    
+
+        color: white;
+        font-size: 18px ;
+        background-color: transparent;
+    }
+}
+
+@media (max-width:650px){
+    .cajaPadre{
+        padding: 2px;
+        display: grid;
+        grid-gap: 5px ;
+        grid-template-columns: 100%;
+    }
+    .caja1{
+        color: white;
+        background-color: rgb(0, 150, 150);
+        padding: 20px;
+        border: 1px solid rgb(11, 175, 175);
+        width: 100%;
+        height: 565px;
+    }
+    .caja1 img{
+        width: 200px;
+        height: 200px;
+        background-color: transparent;
+           
+    }
+
+}
+
+@media (max-width:500px){
+    .cajaPadre{
+        padding: 2px;
+        display: grid;
+        grid-gap: 5px ;
+        grid-template-columns: 100%;
+    }
+    .caja1{
+        color: white;
+        background-color: rgb(0, 150, 150);
+        padding: 20px;
+        border: 1px solid rgb(11, 175, 175);
+        width: 100%;
+        height: 565px;
+    }
+    .caja1 img{
+        width: 200px;
+        height: 200px;
+        background-color: transparent;
+          
+    }
+
+    
+
+}
+
+@media (max-width:300px){
+    .cajaPadre{
+        padding: 2px;
+        display: grid;
+        grid-gap: 5px ;
+        grid-template-columns: 100%;
+    }
+    .caja1{
+        color: white;
+        background-color: rgb(0, 150, 150);
+        padding: 20px;
+        border: 1px solid rgb(11, 175, 175);
+        width: 235px;
+        height: 450px;
+    }
+    .caja1 img{
+        width: 200px;
+        height: 200px;
+        background-color: transparent;
+          
+    }
+
+}
