@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to bottom, teal, rgb(0, 54, 54));
+    background: linear-gradient(to bottom, rgb(8, 53, 44), rgb(4, 24, 20));
     font-family: 'Gabriela', serif;
     
 }
@@ -30,25 +30,23 @@ ul.show{
 */
 .caja1{
     color: white;
-    background: linear-gradient(to bottom, teal, rgb(48, 139, 139));
-    border: 1px solid rgb(11, 175, 175);
+    background: linear-gradient(to bottom, rgb(8, 53, 44),rgb(20, 100, 76));
+    border: 1px solid rgb(20, 100, 76);
     width: 301px;
     height: 0px auto;
     cursor: pointer;
     transition: all 1s;
 }
 .caja1:hover{
-    box-shadow: 0px 5px 10px rgb(12, 201, 201);
+    box-shadow: 0px 5px 10px yellowgreen;
 }
 .caja1 img{
-    width: 200px;
-    height: 200px;
-
+    width: 170px;
+    border: 2px solid yellowgreen;
     display: block;
-    text-align: center;
+    text-align: center;   
     margin: 0px auto;
-    padding-top: 10px;
-
+    margin-top: 10px;
     background-color: transparent;  
 }
 
@@ -68,8 +66,8 @@ ul.show{
     transition: 500ms;
 }
 .caja1 ul li a:hover{    
-    color:rgb(0, 54, 54);
-    text-shadow: 0px 0px 4px rgb(12, 201, 201);
+    color:rgb(163, 231, 25);
+    text-shadow: 0px 0px 4px yellowgreen;
 }
 
 
@@ -86,11 +84,11 @@ ul.show{
     transition: all 2s;
 }
 .caja2 h1:hover{  
-    color:rgb(0, 54, 54);
-    text-shadow: 0px 0px 4px rgb(12, 201, 201);
+    color:yellowgreen;
+    text-shadow: 0px 0px 4px yellowgreen;
 }
 hr{
-    border: 1px solid rgb(11, 175, 175) ;
+    border: 1px solid yellowgreen ;
 }
 
 .caja2 h3{
@@ -127,12 +125,12 @@ hr{
     border-radius: 0;
     transform: rotate(45deg);
     margin: 0 15px;
-    background: green;
+    background: yellowgreen;
 }
 
 .btn_menu i{
-    color:rgb(0, 54, 54);
-    text-shadow: 0px 0px 4px rgb(12, 201, 201);
+    color:yellowgreen;
+    text-shadow: 0px 0px 4px rgb(8, 53, 44);
     font-size: 15px;
     transition: all 500ms;
 }
@@ -145,9 +143,9 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 54, 54);
+    background-color: rgb(9, 48, 36);
     backdrop-filter: blur(10px);
-    text-shadow: 0px 0px 4px rgb(12, 201, 201);
+    text-shadow: 0px 0px 4px rgb(9, 48, 36);
 
 }
 .lds-ripple {
