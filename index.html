@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Alejandro Zamudio - Portfolio.</title>
     <link rel="stylesheet" href="styles.css" />
-
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap"
-      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet"/>
+    <!-- JQUERY -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+     
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -23,13 +24,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="hidden">
-    <div class="centrado" id="onload">
-      <div class="lds-ripple">
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+  <body>
     <div class="cajaPadre">
       <div class="caja1">
         <img class="circle responsive-img" src="img/perfil.png" alt="" />
@@ -42,24 +37,22 @@
             <span class="btn_menu">
               <i class="fa fa-home"></i>
             </span>
-            <a href="index.html">Inicio</a>
+            <a href="#quien-soy" class="activa links">Inicio</a>
           </li>
           <li>
             <span class="btn_menu">
               <i class="fa fa-pen"></i>
             </span>
-            <a href="">Aprendizaje</a>
-          </li>
+            <a href="#habilidades" class="links">Habilidades</a></li>
           <li>
             <span class="btn_menu">
               <i class="fa fa-eye"></i>
             </span>
-            <a href="proyectos.html"> Proyectos</a>
-          </li>
+            <a href="#proyectos" class="links"> Proyectos</a></li>
           <li>
-            <span class="btn_menu"> <i class="fa fa-address-book"></i> </span
-            ><a href="">Contacto</a>
-          </li>
+            <span class="btn_menu">
+              <i class="fa fa-address-book"></i>
+            </span><a href="#contacto" class="links">Contacto</a></li>
         </ul>
       </div>
       <div class="caja2">
@@ -67,46 +60,240 @@
         <hr />
         <div class="descripcion">
           <h3>Desarrollador de aplicaciones web</h3>
+        </div>
         
-            <div>
-              <p>
-                Bienvenido a la pagina web de un autodidacta en constante
-                aprendizaje. He realizado este portafolio desde 0 con el fin de
-                mostrar mis proyectos y habilidades. Siéntete libre de navegar en
-                esta web y de contactarme si así lo deseas.
-              </p>
-              <a href="#" class="cta"><i class="fas fa-info-circle"></i> Más sobre mí</a>
-            </div>
-            <section class="modale">
-              <div class="modale__container">
-               <!--img src="undraw.svg" class="modale__img"-->
-               <h2 class="modale__title">bienvenido al sitio</h2>
-               <p class="modale__paragraph">Vivo en Rafael Castillo, La matanza(Bs As). Tengo 22 años.
-                  Soy un estudiante en curso de TEC.En web en la Universidad Nacional de la Matanza(UnLaM) y estudiante de inlges en "IAP".
-                   He aprendido mediante cursos en plataformas digitales como "Coder House", "Udemy" y 
-                   diferentes cursos gratuitos en la web, habilidades como frontend, backend, despliegue de sitios web, accesibilidad, autenticación,etc. 
-                   Además practico bastante por mi cuenta ya que me gusta lo que hago.  
-                    Me gustaría conseguir mi primer trabajo de desarrollador web e ir aprendiendo poco a poco más en profundidad este mundo maravilloso y extenso.</p>
-               <a href="#" class="modale__close">Cerrar</a>  
-             </div>
-              </div>
-             </section>
+    <!-- CONTENIDO -->
+    <div class="contenido">
+      <section class="quien-soy" id="quien-soy">
+          <div>
+            <p>
+              Bienvenido a la pagina web de un autodidacta en constante
+              aprendizaje. He realizado este portafolio desde 0 con el fin de
+              mostrar mis proyectos y habilidades. Siéntete libre de navegar en
+              esta web y de contactarme si así lo deseas.
+            </p>
+            <a href="#" class="cta"><i class="fas fa-info-circle"></i> Más sobre mí</a>
+          </div>
+          <section class="modale">
+            <div class="modale__container">
+             <!--img src="undraw.svg" class="modale__img"-->
+             <h2 class="modale__title">bienvenido al sitio</h2>
+             <p class="modale__paragraph">Vivo en Rafael Castillo, La matanza(Bs As). Tengo 22 años.
+                Soy un estudiante en curso de TEC.En web en la Universidad Nacional de la Matanza(UnLaM) y estudiante de inlges en "IAP".
+                 He aprendido mediante cursos en plataformas digitales como "Coder House", "Udemy" y 
+                 diferentes cursos gratuitos en la web, habilidades como frontend, backend, despliegue de sitios web, accesibilidad, autenticación,etc. 
+                 Además practico bastante por mi cuenta ya que me gusta lo que hago.  
+                  Me gustaría conseguir mi primer trabajo de desarrollador web e ir aprendiendo poco a poco más en profundidad este mundo maravilloso y extenso.</p>
+             <a href="#" class="modale__close">Cerrar</a>  
+           </div>
+            
+           </section>
+          
+        </section>
 
-          <!--CAROUSEL
+      <section class="habilidades" id="habilidades">
+          <h2>Habilidades</h2>
+          <p>Conjunto de tecnologías con las que he trabajado/trabajo</p>
+          <div class="grid-habilidades">
+              <div class="imagen-grid" id="1">
+                  <img src="assets/Images/html.png" alt="Logo HTML">
+                  <span class="titulo-habilidades">HTML</span>
+                  <div class="texto-habilidades">
+                      <p>Me siento bastante cómodo trabajando en HTML, aplicando semántica y generando la estructura</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid" id="2">
+                  <img src="assets/Images/css.png" alt="Logo CSS">
+                  <span class="titulo-habilidades">CSS</span>
+                  <div class="texto-habilidades">
+                      <p>Uso Flexbox y Grid para posicionar, estilos modernos y animaciones.</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid" id="3">
+                  <img src="assets/Images/js.png" alt="Logo JS">
+                  <span class="titulo-habilidades">JavaScript</span>
+                  <div class="texto-habilidades">
+                      <p>Mi primer lenguaje de programación. Capturar elementos, eventos, funciones, ajax...</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid" id="4">
+                  <img src="assets/Images/bootstrap.png" alt="Logo Bootstrap">
+                  <span class="titulo-habilidades">Bootstrap</span>
+                  <div class="texto-habilidades">
+                      <p>Uso esporádico para layouts simples o componentes.</p>
+                  </div>
+              </div>
+
+
+              <div class="imagen-grid" id="5">
+                  <img src="assets/Images/jquery.png" alt="Logo JQuery">
+                  <span class="titulo-habilidades">JQuery</span>
+                  <div class="texto-habilidades">
+                      <p>He realizado varios proyectos con esta librería y me siento cómodo trabajando con ella o combinándola con JS.</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid" id="6">
+                  <img src="assets/Images/php.png" alt="Logo PHP">
+                  <span class="titulo-habilidades">PHP</span>
+                  <div class="texto-habilidades">
+                      <p>Aprendí back-end con este lenguaje. Tratar datos de formularios, validación, cruds...</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid" id="7">
+                  <img src="assets/Images/laravel.png" alt="Logo Laravel">
+                  <span class="titulo-habilidades">Laravel</span>
+                  <div class="texto-habilidades">
+                      <p>He aprendido a hacer cruds con Laravel y a manejar el MVC con soltura.</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid" id="8">
+                  <img src="assets/Images/sql.png" alt="Logo SQL">
+                  <span class="titulo-habilidades">MySQL</span>
+                  <div class="texto-habilidades">
+                      <p>Comandos esenciales, relaciones, gestión de BBDD y uso en la terminal.</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid">
+                  <img src="assets/Images/git.png" alt="Logo Git">
+                  <span class="titulo-habilidades">GIT</span>
+                  <div class="texto-habilidades">
+                      <p>Controlo las versiones de mis proyectos y me facilita bastante la gestión de mis archivos.</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid">
+                  <img src="assets/Images/github.png" alt="Logo GitHub">
+                  <span class="titulo-habilidades">GitHub</span>
+                  <div class="texto-habilidades">
+                      <p>Aquí subo todos los proyectos que tienen importancia para mí.</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid">
+                  <img src="assets/Images/xampp.png" alt="Logo Xampp">
+                  <span class="titulo-habilidades">Xampp</span>
+                  <div class="texto-habilidades">
+                      <p>Es la suite de servicios locales que más he usado.</p>
+                  </div>
+              </div>
+
+              <div class="imagen-grid">
+                  <img src="assets/Images/laragon.jpg" alt="Logo Laragon">
+                  <span class="titulo-habilidades">Laragon</span>
+                  <div class="texto-habilidades">
+                      <p>Esta suite la uso sobretodo para proyectos Laravel.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="proyectos" id="proyectos">
+          <h2>Proyectos</h2>
+          <p>Proyectos que he realizado tanto en clase como por mi cuenta</p>
+          <div class="proyecto">
+              <div class="proyecto-menu">
+                  <ul>
+                      
+                  </ul>
+
+                  <div class="content-select">
+                      <select name="proyecto-menu-item" id="proyecto-menu-item"></select>
+                      <i class="fas fa-caret-down"></i>
+                  </div>
+                  
+              </div>
+
+              <div class="proyecto-contenido">
+                  <div class="proyecto-contenido-imagen">
+                      <div class="multimedia-proyecto">
+                          <video width="100%" height="auto" class="video" autoplay loop muted src=""></video>
+                      </div>
+                      
+                      <div class="links-proyecto">
+                          <a href="" class="github" target="_blank" rel=”noreferrer noopener”><i class="fab fa-github"></i><span>Repositorio de GitHub</span></a>
+                          <a href="" class="website" target="_blank" rel=”noreferrer noopener”><i class="fas fa-link"></i><span>Website</span></a>
+                      </div>
+                  </div>
+
+                  <div class="proyecto-contenido-descripcion">
+                      <div class="texto">
+                          <h2 class="titulo-proyecto"></h2>
+
+                          <div class="p">
+                              <p class="puno"></p>
+                              <p class="pdos"></p>
+                          </div>
+                      </div>
+                      
+                      <div class="tecnologias-proyecto">
+
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+          <h2>Contacto</h2>
+          <p>Contáctame por estas vías</p>
+
+          <div class="contacto-items">
+              <div class="contacto-item" id="uno">
+                  <a href="mailto:juadrigarciagonzalez@gmail.com?Subject=Contacto porfolio" target="_blank" rel=”noreferrer noopener”><i class="fas fa-envelope"></i><span>Email</span></a>
+              </div>
+
+              <div class="contacto-item" id="dos">
+                  <a href="https://www.linkedin.com/in/juanjo-garc%C3%ADa-gonz%C3%A1lez-016a58229/" target="_blank" rel=”noreferrer noopener”><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+              </div>
+
+              <div class="contacto-item" id="cuatro">
+                  <a href="https://twitter.com/JuanjoGarciaG" target="_blank" rel=”noreferrer noopener”><i class="fab fa-twitter"></i><span>Twitter</span></a>
+              </div>
+          </div>
+          
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+          <p>Realizado por Juanjo García González · <span class="contenedor-ano"></span></p>
+      </footer>
+
+      <!-- FLECHA SUBIR -->
+      <a href="#quien-soy" title="Ir arriba" class="flecha-subir" id="flecha-subir"><i class="fas fa-arrow-alt-circle-up"></i></a>
+    </div>
+
+
+          <!--CAROUSEL>
           <div class="container">
             <div class="row">
               <div class="col s12">
                 <div class="carousel center-align">
                   <div class="carousel-item">
-                    <img src="img/Pagina-web1.jpg" alt="" />
+                    <img src="img/html.png" alt="" />
                   </div>
 
                   <div class="carousel-item">
-                    <img src="img/Pagina-web2.jpg" alt="" />
+                    <img src="img/css.png" alt="" />
                   </div>
 
                   <div class="carousel-item">
-                    <img src="img/Pagina-web-3.jpg" alt="" />
+                    <img src="img/bootstrap.png" alt="" />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/jquery.png" alt="" />
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="img/js.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -115,11 +302,10 @@
         </div>
       </div>
     </div>
-    <!--loader-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!--Materialize.css-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--js main-->
     <script src="js/main.js"></script>
+    <!--Materialize.css-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
   </body>
 </html>
